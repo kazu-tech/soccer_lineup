@@ -1,0 +1,28 @@
+.lineup
+  スターティングメンバー
+  %br
+  = @post.num1
+  %br
+  = @post.num2
+  %br
+  = @post.num3
+  %br
+  = @post.num4
+  %br
+  = @post.num5
+  %br
+  = @post.num6
+  %br
+  = @post.num7
+  %br
+  = @post.num8
+  %br
+  = @post.num9
+  %br
+  = @post.num10
+  %br
+  = @post.num11
+.edit_form
+  = link_to "編集", edit_post_path(@post.id)
+.delete_form
+  = link_to "削除", post_path(@post.id), method: :delete

@@ -1,7 +1,7 @@
 .new_form
-新規投稿
+投稿の編集
 = form_with model: @post, class: :form, local: true do |form|
-  = form.datetime_field :content, placeholder: :日付, id: :date
+  = form.date_select :content, placeholder: :日付, id: :date
   = form.text_area :content, placeholder: :対戦相手, id: :match
   = form.text_area :content, placeholder: :結果, id: :result
   = form.text_area :content, placeholder: :フォーメーション, id: :formation
@@ -17,3 +17,4 @@
   = form.text_area :content, placeholder: :選手名, id: :num2
   = form.text_area :content, placeholder: :選手名, id: :num1
   = form.submit '投稿する', class: :form__btn
+  
