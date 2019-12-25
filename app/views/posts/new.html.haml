@@ -1,6 +1,5 @@
 .new_form
 新規投稿
-  = form.text_area :content, placeholder: :選手名, id: :num9
 .edit-form
   = form_with model: @post, local: true do |form|
     = form.date_field :date, placeholder: :日付
