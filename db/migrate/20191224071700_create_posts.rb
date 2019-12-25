@@ -16,7 +16,8 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :num3
       t.string :num2
       t.string :num1
-      t.string :team_id
+      t.text :text
+      t.string :user_id
       t.timestamps
     end
   end
