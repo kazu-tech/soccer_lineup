@@ -35,6 +35,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:date, :match, :result, :formation, :num11, :num10, :num9, :num8, :num7, :num6, :num5, :num4, :num3, :num2, :num1).merge(user_id: current_user.id)
+    params.require(:post).permit(:date, :match, :result, :formation, :num11, :num10, :num9, :num8, :num7, :num6, :num5, :num4, :num3, :num2, :num1, :text).merge(user_id: current_user.id)
   end
 end

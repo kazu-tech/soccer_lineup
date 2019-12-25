@@ -1,3 +1,5 @@
+.wrapper
+  = render "header"
 .lineup
   スターティングメンバー
   %br
@@ -22,7 +24,11 @@
   = @post.num10
   %br
   = @post.num11
+  %br
+  = @post.text
 .edit_form
   = link_to "編集", edit_post_path(@post.id)
 .delete_form
   = link_to "削除", post_path(@post.id), method: :delete
+.back-btn
+  = link_to "トップページへ戻る", posts_path
