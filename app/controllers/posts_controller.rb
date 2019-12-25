@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.find(post_params)
+    @post=Post.create(post_params)
     redirect_to root_path
   end
 
@@ -35,6 +35,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:date, :match, :result, :formation, :num11, :num10, :num9, :num8, :num7, :num6, :num5, :num4, :num3, :num2, :num1,)
+    params.require(:post).permit(:date, :match, :result, :formation, :num11, :num10, :num9, :num8, :num7, :num6, :num5, :num4, :num3, :num2, :num1).merge(team_id: 1)
   end
 end
