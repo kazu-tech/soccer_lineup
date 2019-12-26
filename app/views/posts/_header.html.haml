@@ -1,17 +1,23 @@
 .head
   .header__logo
     = link_to "SOCCER LINE-UP", '#'
-  .header__name
-  - if user_signed_in?
-    = current_user.name
-  - else
-    自分のチームを登録してフォーメーションの記録を残そう！    
-  .header_btn
-  - if user_signed_in?
-    = link_to "新規投稿", new_post_path, class: 'btn'
-    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
-  - else
-    = link_to "ユーザー登録", new_user_registration_path, class: 'btn'
-    = link_to "ログイン", new_user_session_path, class: 'btn'
-    
-    
+  .header__box
+    .header__image
+    - if user_signed_in?
+      = image_tag current_user.image.url, width: "130px", hight: "130px";
+    - else
+      写真を登録
+    .header__name 
+      チーム名
+      .team_name
+      - if user_signed_in?
+        = current_user.name
+      - else
+        自分のチームを登録してフォーメーションの記録を残そう！    
+    .header_btn
+    - if user_signed_in?
+      = link_to "新規投稿", new_post_path, class: 'btn'
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
+    - else
+      = link_to "ユーザー登録", new_user_registration_path, class: 'btn'
+      = link_to "ログイン", new_user_session_path, class: 'btn'  

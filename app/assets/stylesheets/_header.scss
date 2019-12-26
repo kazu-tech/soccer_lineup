@@ -1,21 +1,54 @@
 .wrapper {
 width: 100vw;
 height: 200px;
-background-image: url(grass-1176417_1920.jpg);
 }
 .head{
+  width: 100vw;
+  height: 200px;
+  background-image: url(goal-151148_1280.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   a {
     text-decoration: none;
     }
-  .header__logo{
-    text-align: center;
+}
+  .header__logo {
     font-size: 50px;
+    font-family: 'Corben', cursive;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #00F,
+    -2px 2px 1px #00F,
+    2px -2px 1px #00F,
+    -2px -2px 1px #00F;
+    text-align: center;
+    }
     a {
-      color: white;
+      color: red;
+    }
+
+  .header__box {
+    display: flex;
+    .header__image {
+      margin-left: 100px;
+    }
+    .header__name {
+      margin-left: 10%;
+      margin-right: 20%;
+      text-align: center;
+      font-size: 20px;
+      text-shadow: 2px 2px 1px red,
+      -2px 2px 1px red,
+      2px -2px 1px red,
+      -2px -2px 1px red;
+    }
+      .team_name {
+        font-size: 60px;
+      }
+    .header_btn {
+    }
+    a {
+      color: blue;
+      margin-right: 30px;
     }
   }
-  .header__name { 
-  }   
-  .header__btn {
-  }
-}
