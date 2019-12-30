@@ -8,7 +8,14 @@
     background-image: url(soccer-1273968_1280.webp);
     background-size:100% 100%;
     background-repeat: no-repeat;
+    .lineup {
+      color: white;
+    }
   }
+      .lineup-logo {
+        font-size: 20px;
+        text-align: center;
+      }
   .right-contents {
     width: 50%; 
     height: calc(100vh - 200px);

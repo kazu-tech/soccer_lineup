@@ -7,4 +7,22 @@ background-color: brown;
   height: calc(100vh - 220px);
   background-image: url(football-pitch-320100_1920.jpg);
   background-size: 100% 100%;
+  .form_data {
+    height: 40px;
+    text-align: center;
+  }
+  .form_memo {
+    margin-left: 30%;
+    display: flex;
+    .game_formation {
+      height: 50px;
+    }
+    .game_memo {
+      margin-left: 10%;
+      resize: none;
+      height: 50px;
+      width: 300px;
+    }
+  }
+  
 }

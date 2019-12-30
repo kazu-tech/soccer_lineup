@@ -5,11 +5,12 @@
 .main
   .game_box
     - @posts.each do |post|
-      .game-date
-        = post.date
-      .game-match
-        = link_to post.match, post_path(post.id)
-      .game-result
-        = post.result
-      .game-text
-        = post.text
+      .data-box
+        .game-date
+          = post.date
+        .game-match
+          = link_to post.match, post_path(post.id)
+        .game-result
+          = post.result
+        .game-text
+          = post.text
