@@ -4,21 +4,25 @@
 投稿の編集
 .edit-form
   = form_with model: @post, local: true do |form|
-    = form.date_field :date, placeholder: :日付
-    = form.text_field :match, placeholder: :対戦相手
-    = form.text_field :result, placeholder: :結果 
-    = form.text_field :formation, placeholder: :フォーメーション
-    = form.text_field :num11, placeholder: :選手名
-    = form.text_field :num10, placeholder: :選手名
-    = form.text_field :num9, placeholder: :選手名
-    = form.text_field :num8, placeholder: :選手名
-    = form.text_field :num7, placeholder: :選手名
-    = form.text_field :num6, placeholder: :選手名
-    = form.text_field :num5, placeholder: :選手名 
-    = form.text_field :num4, placeholder: :選手名
-    = form.text_field :num3, placeholder: :選手名
-    = form.text_field :num2, placeholder: :選手名 
-    = form.text_field :num1, placeholder: :選手名 
-    = form.text_area :text, placeholder: :試合メモ（選手交代・得点者など）
-    = form.submit '編集する', class: :form__btn
+    .form_data
+      = form.date_field :date, placeholder: :日付
+      = form.text_field :match, placeholder: :対戦相手
+      = form.text_field :result, placeholder: :結果 
+    .form_memo
+      = form.select :formation, [["4-4-2", "4-4-2"], ["4-5-1", "4-5-1"],  ["4-3-3", "4-3-3"], ["3-4-3", "3-4-3"], ["3-5-2", "3-5-2"], ["3-6-1", "3-6-1"], ["5-4-1", "5-4-1"], ["5-3-2", "5-3-2"]],  :prompt => "フォーメーション選択",class: :game_formation 
+      = form.text_area :text, placeholder: :試合メモ（選手交代・得点者など）,class: :game_memo
+    .form_menber
+      = form.text_field :num11, placeholder: :選手名, id: :num11
+      = form.text_field :num10, placeholder: :選手名, id: :num10
+      = form.text_field :num9, placeholder: :選手名, id: :num9
+      = form.text_field :num8, placeholder: :選手名, id: :num8
+      = form.text_field :num7, placeholder: :選手名, id: :num7
+      = form.text_field :num6, placeholder: :選手名, id: :num6
+      = form.text_field :num5, placeholder: :選手名, id: :num5 
+      = form.text_field :num4, placeholder: :選手名, id: :num4
+      = form.text_field :num3, placeholder: :選手名, id: :num3
+      = form.text_field :num2, placeholder: :選手名, id: :num2 
+      = form.text_field :num1, placeholder: :選手名, id: :num1 
+    .form_btn
+      = form.submit '投稿する', class: :form__btn
   
