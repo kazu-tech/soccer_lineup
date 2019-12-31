@@ -13,8 +13,26 @@
     }
   }
       .lineup-logo {
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
+        margin: 20px;
+      }
+      .sutamen {
+        font-size: 20px;
+        color: deepskyblue;
+      }
+      .btn_box {
+        display: flex;
+        margin-left: 50px;
+        justify-content: center;
+        text-decoration: none;
+        .edit_form {
+          margin-right: 5%;
+          text-decoration: none;
+        }
+        .delete_form {
+          margin-right: 5%;
+        }
       }
   .right-contents {
     width: 50%; 
