@@ -40,5 +40,65 @@
     background-image: url(bleachers-1867992_1920.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
+    .lineup {
+      color: fuchsia;
+      position: relative;
+      .sutamen_num1 {
+        position: absolute;
+        margin-top: 70%;
+        margin-left: 48%;
+      }
+      .sutamen_num2 {
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 70%;
+      }
+      .sutamen_num3 {
+        position: absolute;
+        margin-left: 48%;
+        margin-top: 55%;
+      }
+      .sutamen_num4 {
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 20%;
+      }
+      .sutamen_num5 {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 60%;
+      }
+      .sutamen_num6 {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 40%;
+      }
+      .sutamen_num7 {
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 80%;
+      }
+      .sutamen_num8 {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: 48%;
+      }
+      .sutamen_num9 {
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 10%;
+      }
+      .sutamen_num10 {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 60%;
+      }
+      .sutamen_num11 {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 40%;
+      }
+    }
+
   }
 }

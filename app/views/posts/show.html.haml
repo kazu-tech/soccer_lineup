@@ -38,12 +38,14 @@
       = link_to "トップページへ戻る", posts_path
   .right-contents
     .lineup
-      スターティングメンバー
+      フォーメーション
+      .lineup-formation
+        = @post.formation
       .sutamen_num1
         = @post.num1
       .sutamen_num2  
         = @post.num2
-      .sutammen_num3
+      .sutamen_num3
         = @post.num3
       .sutamen_num4
         = @post.num4
