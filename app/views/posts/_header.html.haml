@@ -6,13 +6,13 @@
     - if user_signed_in?
       = image_tag current_user.image.url, width: "130px", hight: "130px";
     - else
-      写真を登録
+      
     .header__name 
       .team_name
       - if user_signed_in?
         = current_user.name
       - else
-        自分のチームを登録してフォーメーションの記録を残そう！    
+        自分のチームを登録してください    
     .header_btn
     - if user_signed_in?
       = link_to "新規投稿", new_post_path, class: 'btn'

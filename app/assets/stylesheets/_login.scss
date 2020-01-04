@@ -1,0 +1,20 @@
+.login_back {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(football-1486353_1920.jpg);
+  background-size: 100% auto;
+  .login_name {
+    text-align: center;
+    color: purple;
+    font-size: 50px;
+  }
+    .field {
+      color: yellow;
+      font-size: 20px;
+      margin: 20px;
+    }
+    .actions {
+      font-size: 10px;
+    }
+  
+}

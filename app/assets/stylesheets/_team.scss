@@ -1,0 +1,20 @@
+.team_back {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(the-ball-488718_1920.jpg);
+  background-size: 100% auto;
+  
+  .team_name {
+    text-align: center;
+    font-size: 40px;
+    color: fuchsia;
+  }
+    .field {
+      font-size: 20px;
+      margin: 20px;
+      color: yellow;
+    }
+    .actions {
+      font-size: 50px;
+    }
+}
