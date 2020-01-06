@@ -27,7 +27,7 @@
           = @post.num10
           %br
           = @post.num11
-          %br
+        .sutamen_memo
           = @post.text
     .btn_box
       .edit_form
@@ -38,9 +38,10 @@
       = link_to "トップページへ戻る", posts_path
   .right-contents
     .lineup
-      フォーメーション
+      スタメンフォーメーション
       .lineup-formation
-        = @post.formation
+        = @post.date
+        = @post.match + "戦"
       .sutamen_num1
         = @post.num1
       .sutamen_num2  

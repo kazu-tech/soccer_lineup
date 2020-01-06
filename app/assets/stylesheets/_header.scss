@@ -29,14 +29,17 @@ height: 200px;
 
   .header__box {
     display: flex;
+    height: 120px;
     .header__image {
       margin-left: 100px;
+      width: 120px;
+      height: 120px;
     }
     .header__name {
       margin-left: 10%;
       margin-right: 20%;
       text-align: center;
-      font-size: 50px;
+      font-size: 40px;
       text-shadow: 2px 2px 1px red,
       -2px 2px 1px red,
       2px -2px 1px red,

@@ -1,3 +1,4 @@
+$formation: 1; 
 .main-contents {
   width: 100vw;
   height: calc(100% - 200px);
@@ -20,6 +21,10 @@
       .sutamen {
         font-size: 20px;
         color: deepskyblue;
+      }
+      .sutamen_memo {
+        margin-top: 20px;
+        color: green;
       }
       .btn_box {
         display: flex;
@@ -50,53 +55,134 @@
       }
       .sutamen_num2 {
         position: absolute;
-        margin-top: 55%;
-        margin-left: 70%;
+        @if $formation == 1 {
+          margin-top: 55%;
+          margin-left: 80%;
+        } @else if $formation == 5 {
+          margin-top: 55%;
+          margin-left: 70%;
+        } @else if $formation == 3 {
+          margin-top: 55%;
+          margin-left: 80%;
+        }
       }
       .sutamen_num3 {
         position: absolute;
-        margin-left: 48%;
-        margin-top: 55%;
+        @if $formation == 1 {
+          margin-top: 55%;
+          margin-left: 60%;
+        } @else if $formation == 5 {
+          margin-left: 48%;
+          margin-top: 55%;
+        } @else if $formation == 3 {
+          margin-top: 55%;
+          margin-left: 60%;
+        }
       }
       .sutamen_num4 {
         position: absolute;
-        margin-top: 55%;
-        margin-left: 20%;
+        @if $formation == 1 {
+          margin-top: 55%;
+          margin-left: 30%;
+        } @else if $formation == 5 {
+          margin-top: 55%;
+          margin-left: 20%;
+        } @else if $formation == 3 {
+          margin-top: 55%;
+          margin-left: 30%;
+        }
       }
       .sutamen_num5 {
         position: absolute;
-        margin-top: 40%;
-        margin-left: 60%;
+        @if $formation == 1 {
+          margin-top: 55%;
+          margin-left: 10%;
+        } @else if $formation == 5 {
+          margin-top: 40%;
+          margin-left: 60%;
+        } @else if $formation == 3 {
+          margin-top: 55%;
+          margin-left: 10%;
+        }
       }
       .sutamen_num6 {
         position: absolute;
-        margin-top: 40%;
-        margin-left: 40%;
+        @if $formation == 1 {
+          margin-top: 30%;
+          margin-left: 80%;
+        } @else if $formation == 5 { 
+          margin-top: 40%;
+          margin-left: 40%;
+        } @else if $formation == 3 {
+          margin-top: 30%;
+          margin-left: 75%;
+        }
       }
       .sutamen_num7 {
         position: absolute;
-        margin-top: 30%;
-        margin-left: 80%;
+        @if $formation == 1 {
+          margin-top: 35%;
+          margin-left: 60%;
+        } @else if $formation == 5 {
+          margin-top: 30%;
+          margin-left: 80%;
+        } @else if $formation == 3 {
+          margin-top: 30%;
+          margin-left: 45%;
+        }
       }
       .sutamen_num8 {
         position: absolute;
-        margin-top: 25%;
-        margin-left: 48%;
+        @if $formation == 1 {
+          margin-top: 35%;
+          margin-left: 30%;
+        } @else if $formation == 5 {
+          margin-top: 25%;
+          margin-left: 48%;
+        }
+          @else if $formation == 3 {
+            margin-top: 30%;
+            margin-left: 20%;  
+          }
       }
       .sutamen_num9 {
         position: absolute;
-        margin-top: 30%;
-        margin-left: 10%;
+        @if $formation == 1 {
+          margin-top: 30%;
+          margin-left: 10%;
+        } @else if $formation == 5 {
+          margin-top: 30%;
+          margin-left: 10%;
+        } @else if $formation == 3 {
+          margin-top: 10%;
+          margin-left: 80%;
+        }
       }
       .sutamen_num10 {
         position: absolute;
-        margin-top: 10%;
-        margin-left: 60%;
+        @if $formation == 1 {
+          margin-top: 10%;
+          margin-left: 60%;
+        } @else if $formation == 5 {
+          margin-top: 10%;
+          margin-left: 60%;
+        } @else if $formation == 3 {
+          margin-top: 10%;
+          margin-left: 45%;
+        }
       }
       .sutamen_num11 {
         position: absolute;
-        margin-top: 10%;
-        margin-left: 40%;
+        @if $formation == 1 {
+          margin-top: 10%;
+          margin-left: 40%;
+        } @else if $formation == 5 {
+          margin-top: 10%;
+          margin-left: 40%;
+        } @else if $formation == 3 {
+          margin-top: 10%;
+          margin-left: 15%;
+        }
       }
     }
 
