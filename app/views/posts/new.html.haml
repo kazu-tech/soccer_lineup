@@ -9,7 +9,7 @@
       = form.text_field :match, placeholder: :対戦相手
       = form.text_field :result, placeholder: :結果 
     .form_memo
-      = form.select :formation, [["4-4-2", "1"], ["4-5-1", "2"],  ["4-3-3", "3"], ["3-4-3", "4"], ["3-5-2", "5"], ["3-6-1", "6"]],  :prompt => "フォーメーション選択",class: :game_formation 
+      = form.select :formation, [["4-4-2", "1"], ["4-5-1", "2"],  ["4-3-3", "3"], ["3-4-3", "4"], ["3-5-2", "5"], ["3-6-1", "6"]], prompt: "フォーメーション選択",class: :game_formation 
       = form.text_area :text, placeholder: :試合メモ（選手交代・得点者など）,class: :game_memo
     .form_menber
       = form.text_field :num11, placeholder: :選手名, id: :num11
@@ -25,3 +25,4 @@
       = form.text_field :num1, placeholder: :選手名, id: :num1 
     .form_btn
       = form.submit '投稿する', class: :form__btn
+  
