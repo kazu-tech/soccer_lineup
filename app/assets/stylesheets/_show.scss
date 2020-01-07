@@ -1,4 +1,4 @@
- $formation: 5; 
+ $formation: 3; 
 .main-contents {
   width: 100vw;
   height: calc(100% - 200px);
@@ -55,7 +55,16 @@
       }
       .sutamen_num2 {
         position: absolute;
-        
+        @if $formation == 1 {
+          margin-top: 55%;
+          margin-left: 80%;
+        } @else if $formation == 5 {
+          margin-top: 55%;
+          margin-left: 70%;
+        } @else if $formation == 3 {
+          margin-top: 55%;
+          margin-left: 80%;
+        }
       }
       .sutamen_num3 {
         position: absolute;
