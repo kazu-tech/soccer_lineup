@@ -2,6 +2,8 @@
   .header__logo
     = link_to "SOCCER LINE-UP", root_path
   .header__box
+    %p jQuery稼働テスト(未稼働)
+    
     .header__image
     - if user_signed_in?
       = image_tag current_user.image.url, width: "120px", hight: "120px";
