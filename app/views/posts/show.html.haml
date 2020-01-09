@@ -42,18 +42,19 @@
       .lineup-formation
         = @post.date
         = @post.match + "戦"
-        - if  @post.formation == 1
-          = render "formation1"
-        - elseif @post.formation == 2
-          = render "formation2"
-        - elseif @post.formation == 3
-          = render "formation3"
-        - elseif @post.formation == 4
-          = render "formation4"
-        - elseif @post.formation == 5
-          = render "formation5"
-        - elseif @post.formation == 6
-          = render "formation6"
+        -# - if @post.formation == 1
+        -#   = render "formation1"
+        -#   - elseif @post.formation == 2
+        -#     = render "formation2"
+        -#   - elseif @post.formation == 3
+        -#     = render "formation3"
+        -#   - elseif @post.formation == 4
+        -#     = render "formation4"
+        -#   - elseif @post.formation == 5
+        -#     = render "formation5"
+        -#   - elseif @post.formation == 6
+        -#     = render "formation6"
+        
 
 -# - if @post.formation == 1
 -# css:

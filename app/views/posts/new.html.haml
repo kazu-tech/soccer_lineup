@@ -12,12 +12,29 @@
       = form.select :formation, [["4-4-2", "1"], ["4-5-1", "2"],  ["4-3-3", "3"], ["3-4-3", "4"], ["3-5-2", "5"], ["3-6-1", "6"]], prompt: "フォーメーション選択",class: :game_formation 
       = form.text_area :text, placeholder: :試合メモ（選手交代・得点者など）,class: :game_memo
     .form_menber
-      -# %select#myselectbox{:onchange => "myfunc()"}
-      -#   %option{:value => "東京"} 東京
-      -#   %option{:value => "神奈川"} 神奈川
-      -#   %option{:value => "千葉"} 千葉
-      -# %p#target
-      = render "_new4-4-2"
-     
+   
+      = render "new4-4-2"
+      -# - elsif :formation == 2
+      -#   = render "new4-5-1"
+      -# - elsif :formation == 3
+      -#   = render "new4-3-3"
+      -# - elsif :formation == 4
+      -#   = render "new3-4-3"
+      -# - elsif :formation == 5
+      -#   = render "new3-5-2"
+      -# - elsif :formation == 6
+      -#   = render "new3-6-1"
+      -# -# = form.text_field :num11, placeholder: :選手名, id: :num11
+      -# = form.text_field :num10, placeholder: :選手名, id: :num10
+      -# = form.text_field :num9, placeholder: :選手名, id: :num9
+      -# = form.text_field :num8, placeholder: :選手名, id: :num8
+      -# = form.text_field :num7, placeholder: :選手名, id: :num7
+      -# = form.text_field :num6, placeholder: :選手名, id: :num6
+      -# = form.text_field :num5, placeholder: :選手名, id: :num5 
+      -# = form.text_field :num4, placeholder: :選手名, id: :num4
+      -# = form.text_field :num3, placeholder: :選手名, id: :num3
+      -# = form.text_field :num2, placeholder: :選手名, id: :num2 
+      -# = form.text_field :num1, placeholder: :選手名, id: :num1 
+    .form_btn
       = form.submit '投稿する', class: :form__btn
   
