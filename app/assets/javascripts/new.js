@@ -1,13 +1,11 @@
-$(".extraction").change(function() {
-  var extraction_val = $(".extraction").val();
-  if(extraction_val == "全て") {
-      $('.tokyo').css('display', 'nobe');
-      $('.osaka').css('display', 'none');
-  }else if(extraction_val == "東京") {
-      $('.tokyo').css('display', 'block');
-      $('.osaka').css('display', 'none');
-  }else if(extraction_val == "大阪") {
-      $('.tokyo').css('display', 'none');
-      $('.osaka').css('display', 'block');
-  };
+$(function() {
+  $('formation').change(function() {
+    //セレクタの値が変更された時の処理
+ 
+    //選択したvalue値を変数に格納
+    var val = $(this).val();
+ 
+    //選択したvalue値をp要素に出力
+    $('.form_menber').text(val);
+  });
 });
