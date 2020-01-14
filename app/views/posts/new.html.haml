@@ -11,48 +11,44 @@
     .form_memo
       = form.text_area :text, placeholder: :試合メモ（選手交代・得点者など）,class: :game_memo
     .form_formation  
-      %input#layout-4-4-2{checked: "checked", name: "formation", type: "radio", varue: "1"}/
-      %label{for: "formation-4-4-2"} 4-4-2
-      %input#layout-4-5-1{name: "formation", type: "radio", varue: "2"}/
-      %label{for: "formation-4-5-1"} 4-5-1
-      %input#layout-4-3-3{name: "formation", type: "radio", varue: "3"}/
-      %label{for: "formation-4-3-3"} 4-3-3
-      %input#layout-3-5-2{name: "formation", type: "radio", varue: "4"}/
-      %label{for: "formation-3-4-3"} 3-4-3
-      %input#layout-3-5-2{name: "formation", type: "radio", varue: "5"}/
-      %label{for: "formation-3-5-2"} 3-5-2
-      %input#layout-3-5-2{name: "formation", type: "radio", varue: "6"}/
-      %label{for: "formation-3-6-1"} 3-6-1
-      %ul
+      / ↓切り替え用タブ（ラジオボタン）
+      %input#layout-4-4-2{:checked => "checked", :name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-4-4-2"} 4-4-2
+      %input#layout-4-5-1{:name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-4-5-1"} 4-5-1
+      %input#layout-4-3-3{:name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-4-3-3"} 4-3-3
+      %input#layout-3-4-3{:name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-3-4-3"} 3-4-3
+      %input#layout-3-5-2{:name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-3-5-2"} 3-5-2
+      %input#layout-3-6-1{:name => "formation", :type => "radio"}/
+      %label.tab_item{:for => "formation-3-6-1"} 3-6-1
+      / ↓切り替わり要素（sample01）
+      #layout-4-4-2_content.tab_content
+        / ↓切り替わり要素（sample01）の内容が入ります
+      #layouto-4-4-2_content.tab_content
+      #layouto-4-5-1_content.tab_content
+      #layouto-4-3-3_content.tab_content
+      #layouto-3-4-3_content.tab_content
+      #layouto-3-5-2_content.tab_content
+      #layouto-3-6-1_content.tab_content
+      -# %input#layout-4-4-2{checked: "checked", name: "formation", type: "radio", varue: "1"}/
+      -# %label{for: "formation-4-4-2"} 4-4-2
+      -# %input#layout-4-5-1{name: "formation", type: "radio", varue: "2"}/
+      -# %label{for: "formation-4-5-1"} 4-5-1
+      -# %input#layout-4-3-3{name: "formation", type: "radio", varue: "3"}/
+      -# %label{for: "formation-4-3-3"} 4-3-3
+      -# %input#layout-3-4-3{name: "formation", type: "radio", varue: "4"}/
+      -# %label{for: "formation-3-4-3"} 3-4-3
+      -# %input#layout-3-5-2{name: "formation", type: "radio", varue: "5"}/
+      -# %label{for: "formation-3-5-2"} 3-5-2
+      -# %input#layout-3-6-1{name: "formation", type: "radio", varue: "6"}/
+      -# %label{for: "formation-3-6-1"} 3-6-1
+      -# %ul
       
     .form_menber
       .tabs-sample
-        / ↓切り替え用タブ（ラジオボタン）
-        %input#layout-4-4-2{:checked => "checked", :name => "formation", :type => "radio"}/
-        %label.tab_item{:for => "formation-4-4-2"} 4-4-2
-        %input#layout-4-5-1{:name => "formation", :type => "radio"}/
-        %label.tab_item{:for => "formation-4-5-1"} 4-5-1
-        %input#layout-4-3-3{:name => "formation", :type => "radio"}/
-        %label.tab_item{:for => "formation-4-3-3"} 4-3-3
-        / ↓切り替わり要素（sample01）
-        #layout-4-4-2_content.tab_content
-          / ↓切り替わり要素（sample01）の内容が入ります
-        / ↓切り替わり要素（sample02）
-        #layouto-4-4-2_content.tab_content
-          / ↓切り替わり要素（sample02）の内容が入ります
-        #layouto-4-3-3_content.tab_content
-      -# = form.text_field :num11, placeholder: :選手名, id: :num11
-      -# = form.text_field :num10, placeholder: :選手名, id: :num10
-      -# = form.text_field :num9, placeholder: :選手名, id: :num9
-      -# = form.text_field :num8, placeholder: :選手名, id: :num8
-      -# = form.text_field :num7, placeholder: :選手名, id: :num7
-      -# = form.text_field :num6, placeholder: :選手名, id: :num6
-      -# = form.text_field :num5, placeholder: :選手名, id: :num5 
-      -# = form.text_field :num4, placeholder: :選手名, id: :num4
-      -# = form.text_field :num3, placeholder: :選手名, id: :num3
-      -# = form.text_field :num2, placeholder: :選手名, id: :num2 
-      -# = form.text_field :num1, placeholder: :選手名, id: :num1 
-      
       -# = render "new4-4-2"
       -# = render "new4-5-1"
       -# = render "new4-3-3"
