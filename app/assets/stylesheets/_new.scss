@@ -7,6 +7,7 @@ background-color: brown;
   height: calc(100vh - 220px);
   background-image: url(football-pitch-320100_1920.jpg);
   background-size: 100% 100%;
+  display: block;
   .form_data {
     height: 40px;
     text-align: center;
@@ -72,6 +73,53 @@ background-color: brown;
       margin-left: 42%;
       margin-right: 42%;
     }
+  }
+  /* ラジオボタンを全て消す */
+input[name="tab_item"] {
+  display: none;
+  }
+  /* 選択されているタブのコンテンツのみを表示 */
+  #formation-4-4-2:checked ~ #formation4-4-2_content,
+  #formartion-4-5-1:checked ~ #formation-4-5-1_content,
+  #formation-4-3-3:cheched ~ #formation-4-3-3_content {
+  display: block;
+  cursor: pointer;
+  }
+  /* 選択されているタブのスタイルを変える */
+  div.tabs-sample input:checked + .tab_item {
+  background-color: #000;
+  color: #fff;
+  }
+  /* タブ切り替え全体のスタイル（任意） */
+  div.tabs-sample {
+  text-align:center;
+  #layout-4-4-2 {
+    cursor: pointer;
+  }
+  }
+  /* タブのスタイル（任意） */
+  .tab_item {
+  padding:10px 45px;
+  border: solid #000 1px;
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height:1em;
+  color: #333;
+  display:inline-block;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  margin:0;
+  }
+  .tab_item:hover {
+  opacity: 0.75;
+  }
+  /* タブ切り替えの中身のスタイル（任意） */
+  .tab_content {
+  display: none; /* ←のみ必ず必要 */
+  border:solid #ccc 1px;
+  margin:50px 0 0;
+  padding:25px;
   }
   .form__btn {
     color: blue;
